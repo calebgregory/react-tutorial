@@ -19,7 +19,9 @@
         render: function() {
           return (
             <div className="commentBox">
-              Hello, wold! I am CommentBox.
+              <h1>Comments</h1>
+              <CommentList />
+              <CommentForm />
             </div>
           );
         }
@@ -28,6 +30,26 @@
         <CommentBox />,
         document.getElementById('content')
       );
+
+      var CommentList = React.createClass({
+        render: function() {
+          return (
+            <div className="commentList">
+              Herro wold! I am CommentList.
+            </div>
+          );
+        }
+      });
+
+      var CommentForm = React.createClass({
+        render: function() {
+          return (
+            <div className="commentForm">
+              Hello, wold! I am CommentForm.
+            </div>
+          );
+        }
+      });
 
     </script>
   </body>
