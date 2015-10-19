@@ -15,22 +15,6 @@
     <div id="content"></div>
     <script type="text/babel">
 
-      var CommentBox = React.createClass({
-        render: function() {
-          return (
-            <div className="commentBox">
-              <h1>Comments</h1>
-              <CommentList />
-              <CommentForm />
-            </div>
-          );
-        }
-      });
-      ReactDOM.render(
-        <CommentBox />,
-        document.getElementById('content')
-      );
-
       var CommentList = React.createClass({
         render: function() {
           return (
@@ -50,6 +34,22 @@
           );
         }
       });
+
+      var CommentBox = React.createClass({
+        render: function() {
+          return (
+            <div className="commentBox">
+              <h1>Comments</h1>
+              <CommentList />
+              <CommentForm />
+            </div>
+          );
+        }
+      });
+      ReactDOM.render(
+        <CommentBox />,
+        document.getElementById('content')
+      );
 
     </script>
   </body>
